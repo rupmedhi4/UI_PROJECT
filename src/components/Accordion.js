@@ -44,13 +44,13 @@ const Accordion = () => {
             className={`border ${activeIndex === index ? "bg-[#B9FF66] border-[#191A23]" : "bg-gray-100 border-[1px]   border-[#191A23]"} 
             rounded-[45px] p-6 shadow-md transition-all pt-[41px] pr-[60px] pl-[41px] pb-[60px]`}
             style={{
-              boxShadow: "0px 5px 0px 0px #191A23", // Added shadow effect here
+              boxShadow: "0px 5px 0px 0px #191A23",
             }}
           >
 
             {activeIndex === index && (
               <div className=" text-[16] mt-4 text-[14px]  md:w-[1114px]  md:h-[60px] text-sm md:text-base leading-relaxed">
-                <div className="border-[1px] border-[#000000] w-[1114px]"></div>
+                <div className="border-[1px] border-[#000000] md:w-[1114px]"></div>
                 <p className="mt-4">{step.description}</p>
               </div>
             )}
